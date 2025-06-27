@@ -1,0 +1,5 @@
+# Ignore downloaded models (large)
+models/
+__pycache__/
+*.faiss
+*.pkl

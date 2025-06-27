@@ -1,0 +1,14 @@
+pandas
+scikit-learn
+joblib
+torch>=2.0.0
+transformers>=4.41.0
+datasets>=2.18.0
+sentence-transformers>=2.6.1
+ctransformers>=0.3.0
+faiss-cpu>=1.7.4
+gradio
+uvicorn
+fastapi
+tqdm
+huggingface_hub>=0.23.0
