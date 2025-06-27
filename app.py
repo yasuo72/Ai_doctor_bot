@@ -43,7 +43,11 @@ def gradio_ui():
     return demo
 
 
-def main():  # This is the HF Spaces entry point
+# Create global Blocks object for HF Spaces autolaunch
+# (HF searches for `demo`, `app`, or `interface` at import time.)
+demo = gradio_ui()
+
+def main():  # Fallback CLI entry point
     ui = gradio_ui()
     # On Spaces we set share=False; HF handles routing
     ui.launch(show_error=True, share=False)
